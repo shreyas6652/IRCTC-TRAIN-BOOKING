@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="login.html" align="right"><img src="login.png" alt="Italian Trulli"></a>
+<title>SOUTH WESTERN RAILWAY</title>
+</head>
+<body>
+<style>
+body {
+  background-image: url('https://image.freepik.com/free-photo/turquoise-concrete-wall-background_23-2148255150.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  background-opacity:0.075;ss
+}
+</style>
+</body>
+<h1 style="color:blue;" style="font-size:25px;" align="center"><marquee>SOUTH WESTERN RAILWAY</marquee></h1>
+<img src="irtc.png" align="left">
+<h2 style="color:blue;" style="font-size:15px;" align="center">RESERVATION</h2>
+<p style="margin-left:350px;"> If you are a Medical Practitioner please tick(.) in Box  <input type="checkbox" style="margin-left:150px;"> <br/> (You could be of help in an emergency)</p> 
+<p style="margin-left:350px;"> If you want Senior Citizen Concession,please wrote Yes/No in Box <input type="checkbox" style="margin-left:65px;"> <br/> (if yes,please carry a proof of age during the journey to avoid<br/>inconvenience of penal charging under extant railway rules)</p> 
+<h3 style="color:balck;">
+<form style="margin-left:350px;" method="post" id="myForm">
+  	Train NO(PNR):<input type="number" name="trainno" style="width:60px;">
+	IRCTC ID:<input type="text" name="IRTC" style="width:70px;" required>
+	Class: <select name="classtype">
+  	<option value="General">General</option>
+  <option value="Sleeper" >Sleeper</option>
+  <option value="Seater" >Seater</option>
+  <option value="AC coach" >AC Coach</option>
+    <option value="Ladies" >Ladies Quota</option>
+  </select>
+	DATE:<input type="date" name="Date1" style="width:90px"; min="2019-11-14" max="2019-12-31"><br>
+  	No.of berth/Seat:<input type="number" name="noofseats" style="width:100px;">
+  	Boarding at:<input type="text" name="at" style="width:110px;">
+  	Reservation upto:<input type="text" name="reservation_upto" style="width:120px;">
+	<br>
+	TICKET ID(Only for cancellation):<input type="number" name="ticketid" style="width:60;">
+</form><br/><br/>
+<div align="center">
+<button type="submit" value="Submit" form="myForm" formmethod="post" formaction="connect.php" align="right" >Reservation</button>
+<button type="submit" value="Submit" form="myForm" formmethod="post" formaction="connect1.php" >Cancellation</button>
+<button type="submit" value="Submit" form="myForm" formmethod="post" formaction="Resend.html" >Resend the ticket</button>
+<button type="submit" value="Submit" form="myForm" formmethod="post" formaction="info.html" >Go to information page(Only those who have registerated)</button>
+<br>
+</div>
+</h3>
+<h4 align="center"><a href="https://www.railyatri.in/time-table">click here to know train time table</a></h4>
+<h4 align="center"><a href="guidness.html">click here to know about reservation and cancellation of ticket</a></h4>
+<h4 align="center"><a href="https://www.thebetterindia.com/123292/cancellation-refund-irctc-tickets">Click here to know about more about cancellation of ticket</a></h4>
+<br>
+ <div class="trainDetails" id="trainDetails" align="center">
+              <div class="header clearFix">
+                <div class="col-sm-12 pad0">
+                  <h1 title="Dharwar">
+                    <strong style="color:red;">Dharwar Train Station</strong>
+                  </h1>
+                  <!-- <h2>Station details</h2> -->
+                  <ul class="summaryInfo list-inline clearFix">
+                      <!--<li class="col col6 truncate">
+                        <small>Name</small>
+                        Dharwar
+                      </li> -->
+                      <li class="truncate">
+                        <small>Code</small>
+                        DWR
+                      </li>
+
+                   </ul>
+                   <p>
+                    <small>
+                    </small>
+                  </p>
+                  <div class="lineMessage ugly icon" id="errors" style="display:none;">
+                    <span>There were errors with your submission</span>
+                    <ol></ol>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+             
+              <p>&nbsp;</p>
+              <div class="trainDescription stations">
+                <div class="resultTableHeader">
+                  <!--<h2>Trains passing through Dharwar</h2>-->
+                  <div class="stFixHeader innerdiv">
+                    <table class="results">
+                      <thead>
+                        <tr>
+                          <th scope="col" abbr="Train name &amp; number">Train name (no.) passing via <br> Dharwar</th>
+                          <th scope="col" abbr="Arrival time" width="10%">Arrives</th>
+                          <th scope="col" abbr="Departure time" width="9%">Departs</th>
+                          <th scope="col" abbr="Wait time">Stop time</th>
+                          <th scope="col" abbr="Monday">M</th>
+                          <th scope="col" abbr="Tuesday">T</th>
+                          <th scope="col" abbr="Wednesday">W</th>
+                          <th scope="col" abbr="Thursday">T</th>
+                          <th scope="col" abbr="Friday">F</th>
+                          <th scope="col" abbr="Saturday">S</th>
+                          <th scope="col" abbr="Sunday">S</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07143">Hyb Kop Special</a> (07143)</td>
+
+                          <td>14:34</td>
+
+                          <td>14:35</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07315">Velankanni Express</a> (07315)</td>
+
+                          <td>19:18</td>
+
+                          <td>19:20</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07316">Vlnk Vsg Express</a> (07316)</td>
+
+                          <td>20:00</td>
+
+                          <td>20:02</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07318">Ltt Hubli Special</a> (07318)</td>
+
+                          <td>22:25</td>
+
+                          <td>22:27</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07305">Nizamuddin Express</a> (07305)</td>
+
+                          <td>21:23</td>
+
+                          <td>21:25</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/02686">Hubli  Premium</a> (02686)</td>
+
+                          <td>21:12</td>
+
+                          <td>21:14</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06519">Ypr Mrj Express</a> (06519)</td>
+
+                          <td>05:03</td>
+
+                          <td>05:05</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06520">Mrj Ypr Special</a> (06520)</td>
+
+                          <td>21:25</td>
+
+                          <td>21:27</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/02683">Ypr Vsg Superfast Express</a> (02683)</td>
+
+                          <td>07:10</td>
+
+                          <td>07:12</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/02684">Vsg Ypr Express</a> (02684)</td>
+
+                          <td>19:18</td>
+
+                          <td>19:20</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11047">Miraj Ubl Express</a> (11047)</td>
+
+                          <td>05:25</td>
+
+                          <td>05:27</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11048">Ubl Mrj Express</a> (11048)</td>
+
+                          <td>23:20</td>
+
+                          <td>23:22</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06589">Ypr Mrj Express</a> (06589)</td>
+
+                          <td>08:55</td>
+
+                          <td>08:57</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06590">Bangalore Express</a> (06590)</td>
+
+                          <td>19:15</td>
+
+                          <td>19:17</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/02687">Ypr Bgm Superfast Express</a> (02687)</td>
+
+                          <td>06:38</td>
+
+                          <td>06:40</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07327">Bgm Ubl</a> (07327)</td>
+
+                          <td>12:46</td>
+
+                          <td>12:48</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/07328">Ubl Bgm Express</a> (07328)</td>
+
+                          <td>13:43</td>
+
+                          <td>13:45</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/02779">Vsg Sbc Link Express</a> (02779)</td>
+
+                          <td>21:43</td>
+
+                          <td>21:45</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16590">Ranichennama Express</a> (16590)</td>
+
+                          <td>21:43</td>
+
+                          <td>21:45</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11021">Tirunelveli Express</a> (11021)</td>
+
+                          <td>11:25</td>
+
+                          <td>11:27</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12630">Ypr S Kranti Express</a> (12630)</td>
+
+                          <td>21:12</td>
+
+                          <td>21:14</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16589">Rani Chennamma</a> (16589)</td>
+
+                          <td>06:08</td>
+
+                          <td>06:10</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16533">Bgkt Sbc Express</a> (16533)</td>
+
+                          <td>15:53</td>
+
+                          <td>15:55</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06948">Ubl Vsg Link Express</a> (06948)</td>
+
+                          <td>23:21</td>
+
+                          <td>23:22</td>
+
+                          <td>1 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11035">Sharavathi Express</a> (11035)</td>
+
+                          <td>11:25</td>
+
+                          <td>11:27</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17311">Mas Vasco Express</a> (17311)</td>
+
+                          <td>07:11</td>
+
+                          <td>07:12</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11005">Puducherry Express</a> (11005)</td>
+
+                          <td>11:25</td>
+
+                          <td>11:27</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16209">Aii Mys Express</a> (16209)</td>
+
+                          <td>16:20</td>
+
+                          <td>16:25</td>
+
+                          <td>5 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12781">Swarna Jayanthi</a> (12781)</td>
+
+                          <td>05:04</td>
+
+                          <td>05:05</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16506">Gandhidham Express</a> (16506)</td>
+
+                          <td>06:58</td>
+
+                          <td>07:00</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/06578">Vsg Ypr Express</a> (06578)</td>
+
+                          <td>03:35</td>
+
+                          <td>03:37</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11036">Sharavati  Express</a> (11036)</td>
+
+                          <td>15:48</td>
+
+                          <td>15:50</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12782">Swarna Jayanthi</a> (12782)</td>
+
+                          <td>19:18</td>
+
+                          <td>19:20</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16531">Sbc Garib Nawaj</a> (16531)</td>
+
+                          <td>15:53</td>
+
+                          <td>15:55</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17309">Ypr Vasco Express</a> (17309)</td>
+
+                          <td>00:13</td>
+
+                          <td>00:15</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17316">Vlnk Vsg Express</a> (17316)</td>
+
+                          <td>00:13</td>
+
+                          <td>00:15</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16210">Ajmer Express</a> (16210)</td>
+
+                          <td>06:58</td>
+
+                          <td>07:00</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/18048">Vsg Howrah Express</a> (18048)</td>
+
+                          <td>11:39</td>
+
+                          <td>11:40</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11304">Kop Hyb Express</a> (11304)</td>
+
+                          <td>14:55</td>
+
+                          <td>15:00</td>
+
+                          <td>5 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16532">Garib Nawaz Express</a> (16532)</td>
+
+                          <td>06:59</td>
+
+                          <td>07:00</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17312">Vsg Chennai Express</a> (17312)</td>
+
+                          <td>19:18</td>
+
+                          <td>19:20</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16534">Sbc Jodhpur Express</a> (16534)</td>
+
+                          <td>06:59</td>
+
+                          <td>07:00</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17310">Ypr Biweekly Express</a> (17310)</td>
+
+                          <td>01:08</td>
+
+                          <td>01:10</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17315">Velankanni Express</a> (17315)</td>
+
+                          <td>13:18</td>
+
+                          <td>13:20</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16508">Jodhpur Express</a> (16508)</td>
+
+                          <td>06:59</td>
+
+                          <td>07:00</td>
+
+                          <td>1 min</td>
+
+                          <td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17301">Mys Dharwad Express</a> (17301)</td>
+
+                          <td>08:15</td>
+
+                          <td><strong>Ends</strong></td>
+
+                          <td></td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17302">Dwr Mysore Express</a> (17302)</td>
+
+                          <td><strong>Starts</strong></td>
+
+                          <td>20:30</td>
+
+                          <td></td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16505">Gimb Sbc Express</a> (16505)</td>
+
+                          <td>16:20</td>
+
+                          <td>16:25</td>
+
+                          <td>5 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/16507">Bgkt Sbcexp</a> (16507)</td>
+
+                          <td>16:20</td>
+
+                          <td>16:25</td>
+
+                          <td>5 min</td>
+
+                          <td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/18047">Amaravathi Express</a> (18047)</td>
+
+                          <td>09:27</td>
+
+                          <td>09:28</td>
+
+                          <td>1 min</td>
+
+                          <td>Y</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17415">Haripriya Express</a> (17415)</td>
+
+                          <td>09:04</td>
+
+                          <td>09:05</td>
+
+                          <td>1 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17317">Lokamanya Tt Express</a> (17317)</td>
+
+                          <td>16:08</td>
+
+                          <td>16:10</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17318">Ltt Hubli Express</a> (17318)</td>
+
+                          <td>01:53</td>
+
+                          <td>01:55</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11303">Hyb Kop Express</a> (11303)</td>
+
+                          <td>14:05</td>
+
+                          <td>14:10</td>
+
+                          <td>5 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11006">Chalukya  Express</a> (11006)</td>
+
+                          <td>15:48</td>
+
+                          <td>15:50</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/11022">Chalukya  Express</a> (11022)</td>
+
+                          <td>15:48</td>
+
+                          <td>15:50</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>N</td><td>N</td><td>Y</td><td>Y</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17603">Kcg Ypr Express</a> (17603)</td>
+
+                          <td>09:28</td>
+
+                          <td>09:29</td>
+
+                          <td>1 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12629">Sampark Kranti</a> (12629)</td>
+
+                          <td>22:17</td>
+
+                          <td>22:18</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17416">Haripriya Express</a> (17416)</td>
+
+                          <td>18:20</td>
+
+                          <td>18:22</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12726">Intercity Express</a> (12726)</td>
+
+                          <td><strong>Starts</strong></td>
+
+                          <td>05:15</td>
+
+                          <td></td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12725">Intercity Express</a> (12725)</td>
+
+                          <td>21:50</td>
+
+                          <td><strong>Ends</strong></td>
+
+                          <td></td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/12780">Goa Express</a> (12780)</td>
+
+                          <td>05:25</td>
+
+                          <td>05:27</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/17305">Nzm Link Express</a> (17305)</td>
+
+                          <td>16:35</td>
+
+                          <td>16:37</td>
+
+                          <td>2 min</td>
+
+                          <td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/22685">Ypr  Skrantiexp</a> (22685)</td>
+
+                          <td>22:17</td>
+
+                          <td>22:18</td>
+
+                          <td>1 min</td>
+
+                          <td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                        <tr>
+                          <td class="trainName"><a href="https://www.cleartrip.com/trains/22686">Ypr S Kranti Express</a> (22686)</td>
+
+                          <td>21:18</td>
+
+                          <td>21:20</td>
+
+                          <td>2 min</td>
+
+                          <td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+		  <footer>
+  <p>Website created by:Shreyas.G.Torgalmath</p>
+  <p>Contact information: shreyastorgalmath123@gmail.com.</p>
+</footer>
+</body>
+</html>
+
